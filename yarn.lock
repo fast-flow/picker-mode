@@ -963,7 +963,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@^2.2.5:
+classnames:
   version "2.2.5"
   resolved "http://registry.npm.taobao.org/classnames/download/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -1608,7 +1608,7 @@ express@^4.14.0:
     utils-merge "1.0.0"
     vary "~1.1.0"
 
-extend@^3.0.0, extend@~3.0.0, extend@3:
+extend, extend@^3.0.0, extend@~3.0.0, extend@3:
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/extend/download/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
 
@@ -2494,6 +2494,12 @@ less@2.5.0:
     promise "^6.0.1"
     request "^2.51.0"
     source-map "^0.4.2"
+
+list-mode:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/list-mode/download/list-mode-0.1.0.tgz#3a74c9d136fb09d7b4a9d3003c5c3e8b85252868"
+  dependencies:
+    extend "^3.0.0"
 
 loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.5, loader-utils@~0.2.5:
   version "0.2.17"
@@ -4073,10 +4079,6 @@ utf8@2.1.0:
 util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
-
-util.react@^1.0.0:
-  version "1.3.3"
-  resolved "http://registry.npm.taobao.org/util.react/download/util.react-1.3.3.tgz#9708cc4ee04fa285bc5443e17e7f5f1683254e31"
 
 util@^0.10.3, util@~0.10.3, util@0.10.3:
   version "0.10.3"
