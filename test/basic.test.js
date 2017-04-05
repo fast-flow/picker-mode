@@ -291,8 +291,8 @@ describe('basic.test.js', function () {
                     checked: false
                 }
             ],
-            // NOTE: viewData 是当前页面中显示数据的 id （用于与 picker.checkedAll state.type="pickerAll" 关联）
-            viewData: function () {
+            // NOTE: getViewData 是当前页面中显示数据的 id （用于与 picker.checkedAll state.type="pickerAll" 关联）
+            getViewData: function () {
                 return [
                     '3tufh23ifghuw',
                     'g24hg823hg232',
@@ -308,7 +308,7 @@ describe('basic.test.js', function () {
             uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
             type: 'empty'
         })
-        // NOTE: checkedAll 用于选中 viewData 中的数据，选中所有数据请使用 picker.checkedGlobalAll()
+        // NOTE: checkedAll 用于选中 getViewData 中的数据，选中所有数据请使用 picker.checkedGlobalAll()
         picker.checkedAll()
         expect(data).toEqual({
             checked: ['3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
@@ -337,7 +337,7 @@ describe('basic.test.js', function () {
                     checked: false
                 }
             ],
-            viewData: function () {
+            getViewData: function () {
                 return [
                     '3tufh23ifghuw',
                     'g24hg823hg232',
