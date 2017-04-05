@@ -40,4 +40,3 @@ npm install picker-mode --save
     <tr>
   <tbody>
 </table>
-
