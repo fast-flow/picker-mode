@@ -34,6 +34,7 @@ describe('checkAll', function () {
             mode: 'check',
             checked: [],
             uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
+            viewDataCheckedAll: false,
             type: 'empty'
         })
         // NOTE: checkAll 用于选中所有数据，会使得 picker 进入反选模式
@@ -42,6 +43,7 @@ describe('checkAll', function () {
             mode: 'uncheck',
             checked: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
             uncheck: [],
+            viewDataCheckedAll: true,
             type: 'empty'
         })
         picker.uncheck('3tufh23ifghuw')
@@ -49,6 +51,7 @@ describe('checkAll', function () {
             mode: 'uncheck',
             checked: ['f23iuh23bff2', 'g24hg823hg232', 'g32igh2iughh3'],
             uncheck: ['3tufh23ifghuw'],
+            viewDataCheckedAll: false,
             type: 'some'
         })
         picker.uncheck(['f23iuh23bff2', 'g24hg823hg232', 'g32igh2iughh3'])
@@ -61,6 +64,7 @@ describe('checkAll', function () {
                 'g24hg823hg232',
                 'g32igh2iughh3'
             ],
+            viewDataCheckedAll: false,
             type: 'empty'
         })
     })

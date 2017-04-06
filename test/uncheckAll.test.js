@@ -1,15 +1,11 @@
 import Picker from "../lib/index"
-
 const commonTestGetViewData = function () {
     return ['f23iuh23bff2', '3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3']
 }
-describe('notExistModeUncheckTypeAll.test.js', function () {
-    it('notExistModeUncheckTypeAll', function () {
+describe('checkAll', function () {
+    it('checkAll', function () {
         var data
         var picker = new Picker({
-            // NOTE: 配置 notExistModeUncheckTypeAll 为 false 则当 mode="uncheck" type="all" 时不自动转换为 mode="check" type="empty"
-            // notExistModeUncheckTypeAll 默认为 true
-            notExistModeUncheckTypeAll: false,
             data: [
                 {
                     id: 'f23iuh23bff2',
@@ -28,6 +24,7 @@ describe('notExistModeUncheckTypeAll.test.js', function () {
                     checked: false
                 }
             ],
+            // NOTE: getViewData 需要返回当前页面中显示数据的 id
             getViewData: commonTestGetViewData,
             onChange: function (stat) {
                 data = stat
@@ -48,27 +45,13 @@ describe('notExistModeUncheckTypeAll.test.js', function () {
             viewDataCheckedAll: true,
             type: 'empty'
         })
-        picker.uncheck('3tufh23ifghuw')
+        picker.uncheckAll()
         expect(data).toEqual({
-            mode: 'uncheck',
-            checked: ['f23iuh23bff2', 'g24hg823hg232', 'g32igh2iughh3'],
-            uncheck: ['3tufh23ifghuw'],
-            viewDataCheckedAll: false,
-            type: 'some'
-        })
-        picker.uncheck(['f23iuh23bff2', 'g24hg823hg232', 'g32igh2iughh3'])
-        // NOTE: notExistModeUncheckTypeAll:false 才会存在 mode="uncheck" type="all"
-        expect(data).toEqual({
-            mode: 'uncheck',
+            mode: 'check',
             checked: [],
-            uncheck: [
-                'f23iuh23bff2',
-                '3tufh23ifghuw',
-                'g24hg823hg232',
-                'g32igh2iughh3'
-            ],
+            uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
             viewDataCheckedAll: false,
-            type: 'all'
+            type: 'empty'
         })
     })
 })
