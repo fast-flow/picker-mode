@@ -2,8 +2,8 @@ import Picker from "../lib/index"
 const commonTestGetViewData = function () {
     return ['f23iuh23bff2', '3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3']
 }
-describe('uncheckAll', function () {
-    it('uncheckAll', function () {
+describe('clear', function () {
+    it('clear', function () {
         var data
         var picker = new Picker({
             data: [
@@ -45,11 +45,11 @@ describe('uncheckAll', function () {
             viewDataCheckedAll: true,
             type: 'empty'
         })
-        picker.uncheckAll()
+        picker.clear()
         expect(data).toEqual({
             mode: 'check',
             checked: [],
-            uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
+            uncheck: [],
             viewDataCheckedAll: false,
             type: 'empty'
         })
