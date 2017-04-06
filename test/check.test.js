@@ -29,7 +29,6 @@ describe('check.test.js', function () {
         NOTE: onChange 在 `new Picker` 时候会立即调用， onChange 返回一个统计信息，{checked:Array, uncheck:Array, type: String}
              type 可以是 globalAll all some empty globalSome pickerAll
         */
-
         expect(data).toEqual(
             {
                 mode : 'check',
@@ -90,7 +89,7 @@ describe('check.test.js', function () {
                     'g32igh2iughh3'
                 ],
                 uncheck: [],
-                type: 'all'
+                type: 'some'
             }
         )
     })

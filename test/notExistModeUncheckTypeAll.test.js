@@ -68,7 +68,7 @@ describe('notExistModeUncheckTypeAll.test.js', function () {
                 'g32igh2iughh3'
             ],
             viewDataCheckedAll: false,
-            type: 'all'
+            type: 'some'
         })
     })
 })

@@ -24,6 +24,9 @@ describe('checkAll', function () {
                     checked: false
                 }
             ],
+            getDataCount: function () {
+                return 4
+            },
             // NOTE: getViewData 需要返回当前页面中显示数据的 id
             getViewData: commonTestGetViewData,
             onChange: function (stat) {
