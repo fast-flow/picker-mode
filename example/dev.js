@@ -1,11 +1,20 @@
 var ReactDOM = require('react-dom')
 var render = ReactDOM.render
 
-// basic
+// viewDataCheckedAll
 ;(function (node) {
     if (!node) {return}
-    require(['./basic.demo.js'], function (Demo) {
+    require(['./viewDataCheckedAll.demo.js'], function (Demo) {
         Demo = Demo.default || Demo
         render(<Demo />, node)
     })
-})(document.getElementById('example__basic_node'))
+})(document.getElementById('example__viewDataCheckedAll_node'))
+
+// checkAll
+;(function (node) {
+    if (!node) {return}
+    require(['./checkAll.demo.js'], function (Demo) {
+        Demo = Demo.default || Demo
+        render(<Demo />, node)
+    })
+})(document.getElementById('example__checkAll_node'))

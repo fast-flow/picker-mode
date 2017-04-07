@@ -3,6 +3,7 @@ describe('del', function () {
     it('del', function () {
         var data
         var attr
+        var testMethod
         var picker = new Picker({
             data: [
                 {
@@ -22,9 +23,10 @@ describe('del', function () {
                     checked: false
                 }
             ],
-            onChange: function (stat, selfdata) {
+            onChange: function (stat, selfdata, method) {
                 data = stat
                 attr = selfdata
+                testMethod = method
             }
         })
         // NOTE: 用于删除某一项目， 一般是在用户点击删除某条数据时调用，删除所有数据请使用 picker.clear()
@@ -52,5 +54,6 @@ describe('del', function () {
             ],
             "mode": "check"
         })
+        expect(testMethod).toEqual('del')
     })
 })

@@ -2307,6 +2307,10 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "http://registry.npm.taobao.org/jsesc/download/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
 
+json-format:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/json-format/download/json-format-1.0.1.tgz#143f67e62af129d6bffed288a46265ea23d0df0c"
+
 json-loader@^0.5.4:
   version "0.5.4"
   resolved "http://registry.npm.taobao.org/json-loader/download/json-loader-0.5.4.tgz#8baa1365a632f58a3c46d20175fc6002c96e37de"
@@ -3701,6 +3705,13 @@ setprototypeof@1.0.3:
 sha.js@2.2.6:
   version "2.2.6"
   resolved "http://registry.npm.taobao.org/sha.js/download/sha.js-2.2.6.tgz#17ddeddc5f722fb66501658895461977867315ba"
+
+shamjs:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/shamjs/download/shamjs-0.1.0.tgz#646533a21d793c864ae88c3f5659f80e21223fcb"
+  dependencies:
+    expect.js "^0.3.1"
+    extend "^3.0.0"
 
 signal-exit@^3.0.0:
   version "3.0.2"
