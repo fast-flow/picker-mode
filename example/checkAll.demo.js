@@ -20,7 +20,7 @@ var Item = React.createClass({
     }
 })
 var list = new sham.List({
-    dataCount: 4,
+    dataCount: 123,
     generator: function (index) {
         var num = index + 1
         return {
