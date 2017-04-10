@@ -117,6 +117,27 @@ describe('concat.test.js', function () {
                 type: 'empty'
             }
         )
+        picker.concat(['jwefguy23bgfyuogqw', 't4fgw3uygvqtuwy3fv', 'l23fgi823hf'])
+        expect(data).toEqual(
+            {
+                mode : 'uncheck',
+                checked: [
+                    'f23iuh23bff2',
+                    '3tufh23ifghuw',
+                    'g24hg823hg232',
+                    'g32igh2iughh3',
+                    'zeh283gfwef',
+                    '2348hv8wege3',
+                    'jwefguy23bgfyuogqw',
+                    't4fgw3uygvqtuwy3fv',
+                    '9wfuygw2euyfgweyf',
+                    'l23fgi823hf'
+                ],
+                uncheck: [],
+                viewDataCheckedAll: true,
+                type: 'empty'
+            }
+        )
 
     })
 })

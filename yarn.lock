@@ -3706,9 +3706,9 @@ sha.js@2.2.6:
   version "2.2.6"
   resolved "http://registry.npm.taobao.org/sha.js/download/sha.js-2.2.6.tgz#17ddeddc5f722fb66501658895461977867315ba"
 
-shamjs:
-  version "0.1.0"
-  resolved "http://registry.npm.taobao.org/shamjs/download/shamjs-0.1.0.tgz#646533a21d793c864ae88c3f5659f80e21223fcb"
+shamjs@0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.taobao.org/shamjs/download/shamjs-0.2.0.tgz#c690d1627a5465340fa57b28d1b54fc3cac671a6"
   dependencies:
     expect.js "^0.3.1"
     extend "^3.0.0"
