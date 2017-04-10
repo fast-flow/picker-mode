@@ -15,7 +15,8 @@
     "React custom style"
   ],
   "dependencies": {
-    "extend": "^3.0.0"
+    "extend": "^3.0.0",
+    "shamjs": "0.2.0"
   },
   "scripts": {
     "doc": "fis3 release -w -d ./output -r ./ -f config/fis-conf.js",
