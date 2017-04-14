@@ -21,12 +21,12 @@ describe('check.test.js', function () {
                     checked: false
                 }
             ],
-            onChange: function (stat) {
-                data = stat
+            onChange: function (stats) {
+                data = stats
             }
         })
         /*
-        NOTE: onChange 在 `new Picker` 时候会立即调用， onChange 返回一个统计信息，{checked:Array, uncheck:Array, type: String}
+        NOTE: onChange 在 `new Picker` 时候会立即调用， onChange 返回一个统计信息，{checked:Array, unchecked:Array, type: String}
              type 可以是 globalAll all some empty globalSome pickerAll
         */
         expect(data).toEqual(
@@ -35,7 +35,7 @@ describe('check.test.js', function () {
                 checked: [
 
                 ],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2',
                     '3tufh23ifghuw',
                     'g24hg823hg232',
@@ -52,7 +52,7 @@ describe('check.test.js', function () {
                 checked: [
                     '3tufh23ifghuw',
                 ],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2',
                     'g24hg823hg232',
                     'g32igh2iughh3'
@@ -61,7 +61,7 @@ describe('check.test.js', function () {
             }
         )
 
-        // NOTE: check 只会选中某些项，如果 stat.checked 中存在这一项，则数据不会做任何改变，但 onChange会被回调
+        // NOTE: check 只会选中某些项，如果 stats.checked 中存在这一项，则数据不会做任何改变，但 onChange会被回调
         picker.check('3tufh23ifghuw')
         expect(data).toEqual(
             {
@@ -69,7 +69,7 @@ describe('check.test.js', function () {
                 checked: [
                     '3tufh23ifghuw',
                 ],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2',
                     'g24hg823hg232',
                     'g32igh2iughh3'
@@ -88,7 +88,7 @@ describe('check.test.js', function () {
                     'g24hg823hg232',
                     'g32igh2iughh3'
                 ],
-                uncheck: [],
+                unchecked: [],
                 type: 'some'
             }
         )

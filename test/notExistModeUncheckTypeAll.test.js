@@ -29,14 +29,14 @@ describe('notExistModeUncheckTypeAll.test.js', function () {
                 }
             ],
             getViewData: commonTestGetViewData,
-            onChange: function (stat) {
-                data = stat
+            onChange: function (stats) {
+                data = stats
             }
         })
         expect(data).toEqual({
             mode: 'check',
             checked: [],
-            uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
+            unchecked: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
             viewDataCheckedAll: false,
             type: 'empty'
         })
@@ -44,7 +44,7 @@ describe('notExistModeUncheckTypeAll.test.js', function () {
         expect(data).toEqual({
             mode: 'uncheck',
             checked: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
-            uncheck: [],
+            unchecked: [],
             viewDataCheckedAll: true,
             type: 'empty'
         })
@@ -52,7 +52,7 @@ describe('notExistModeUncheckTypeAll.test.js', function () {
         expect(data).toEqual({
             mode: 'uncheck',
             checked: ['f23iuh23bff2', 'g24hg823hg232', 'g32igh2iughh3'],
-            uncheck: ['3tufh23ifghuw'],
+            unchecked: ['3tufh23ifghuw'],
             viewDataCheckedAll: false,
             type: 'some'
         })
@@ -61,7 +61,7 @@ describe('notExistModeUncheckTypeAll.test.js', function () {
         expect(data).toEqual({
             mode: 'uncheck',
             checked: [],
-            uncheck: [
+            unchecked: [
                 'f23iuh23bff2',
                 '3tufh23ifghuw',
                 'g24hg823hg232',

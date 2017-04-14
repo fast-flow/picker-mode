@@ -23,8 +23,8 @@ describe('del', function () {
                     checked: false
                 }
             ],
-            onChange: function (stat, selfdata, method) {
-                data = stat
+            onChange: function (stats, selfdata, method) {
+                data = stats
                 attr = selfdata
                 testMethod = method
             }
@@ -34,7 +34,7 @@ describe('del', function () {
         expect(data).toEqual({
             mode: 'check',
             checked: [],
-            uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g32igh2iughh3'],
+            unchecked: ['f23iuh23bff2','3tufh23ifghuw', 'g32igh2iughh3'],
             type: 'empty'
         })
         expect(attr).toEqual({

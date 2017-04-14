@@ -21,8 +21,8 @@ describe('uncheck', function () {
                     checked: false
                 }
             ],
-            onChange: function (stat) {
-                data = stat
+            onChange: function (stats) {
+                data = stats
             }
         })
         expect(data).toEqual(
@@ -32,7 +32,7 @@ describe('uncheck', function () {
                     'f23iuh23bff2',
                     'g24hg823hg232'
                 ],
-                uncheck: [
+                unchecked: [
                     '3tufh23ifghuw',
                     'g32igh2iughh3'
                 ],
@@ -47,7 +47,7 @@ describe('uncheck', function () {
                 checked: [
                     "g24hg823hg232"
                 ],
-                uncheck: [
+                unchecked: [
                     "f23iuh23bff2",
                     "3tufh23ifghuw",
                     "g32igh2iughh3"
@@ -60,7 +60,7 @@ describe('uncheck', function () {
             {
                 mode: 'check',
                 checked: [],
-                uncheck: ['f23iuh23bff2', '3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
+                unchecked: ['f23iuh23bff2', '3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
                 type: 'empty'
             }
         )
@@ -69,7 +69,7 @@ describe('uncheck', function () {
             {
                 mode: 'check',
                 checked: ['f23iuh23bff2', '3tufh23ifghuw'],
-                uncheck: [ 'g24hg823hg232', 'g32igh2iughh3'],
+                unchecked: [ 'g24hg823hg232', 'g32igh2iughh3'],
                 type: 'some'
             }
         )
@@ -79,7 +79,7 @@ describe('uncheck', function () {
             {
                 mode: 'check',
                 checked: [],
-                uncheck: ['f23iuh23bff2', '3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
+                unchecked: ['f23iuh23bff2', '3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
                 type: 'empty'
             }
         )

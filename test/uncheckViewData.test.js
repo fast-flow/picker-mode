@@ -25,8 +25,8 @@ describe('uncheckViewData.test.js', function () {
                 }
             ],
             getViewData: commonTestGetViewData,
-            onChange: function (stat) {
-                data = stat
+            onChange: function (stats) {
+                data = stats
             }
         })
         picker.checkViewData()
@@ -38,7 +38,7 @@ describe('uncheckViewData.test.js', function () {
                     'g24hg823hg232',
                     'g32igh2iughh3'
                 ],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2'
                 ],
                 viewDataCheckedAll: true,
@@ -50,7 +50,7 @@ describe('uncheckViewData.test.js', function () {
             {
                 mode : 'check',
                 checked: [],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2',
                     '3tufh23ifghuw',
                     'g24hg823hg232',

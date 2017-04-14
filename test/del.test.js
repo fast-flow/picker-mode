@@ -21,8 +21,8 @@ describe('del', function () {
                     checked: false
                 }
             ],
-            onChange: function (stat) {
-                data = stat
+            onChange: function (stats) {
+                data = stats
             }
         })
         // NOTE: 用于删除某一项目， 一般是在用户点击删除某条数据时调用，删除所有数据请使用 picker.clear()
@@ -30,21 +30,21 @@ describe('del', function () {
         expect(data).toEqual({
             mode: 'check',
             checked: [],
-            uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g32igh2iughh3'],
+            unchecked: ['f23iuh23bff2','3tufh23ifghuw', 'g32igh2iughh3'],
             type: 'empty'
         })
         picker.check('3tufh23ifghuw')
         expect(data).toEqual({
             mode: 'check',
             checked: ['3tufh23ifghuw'],
-            uncheck: ['f23iuh23bff2', 'g32igh2iughh3'],
+            unchecked: ['f23iuh23bff2', 'g32igh2iughh3'],
             type: 'some'
         })
         picker.del('3tufh23ifghuw')
         expect(data).toEqual({
             mode: 'check',
             checked: [],
-            uncheck: ['f23iuh23bff2', 'g32igh2iughh3'],
+            unchecked: ['f23iuh23bff2', 'g32igh2iughh3'],
             type: 'empty'
         })
     })

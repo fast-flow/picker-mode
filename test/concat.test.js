@@ -25,8 +25,8 @@ describe('concat.test.js', function () {
                 }
             ],
             getViewData: commonTestGetViewData,
-            onChange: function (stat) {
-                data = stat
+            onChange: function (stats) {
+                data = stats
             }
         })
         picker.checkViewData()
@@ -38,7 +38,7 @@ describe('concat.test.js', function () {
                     'g24hg823hg232',
                     'g32igh2iughh3'
                 ],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2'
                 ],
                 viewDataCheckedAll: true,
@@ -54,7 +54,7 @@ describe('concat.test.js', function () {
                     'g24hg823hg232',
                     'g32igh2iughh3'
                 ],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2',
                     'zeh283gfwef'
                 ],
@@ -71,7 +71,7 @@ describe('concat.test.js', function () {
                     'g24hg823hg232',
                     'g32igh2iughh3'
                 ],
-                uncheck: [
+                unchecked: [
                     'f23iuh23bff2',
                     'zeh283gfwef',
                     '2348hv8wege3'
@@ -92,7 +92,7 @@ describe('concat.test.js', function () {
                     'zeh283gfwef',
                     '2348hv8wege3'
                 ],
-                uncheck: [],
+                unchecked: [],
                 viewDataCheckedAll: true,
                 type: 'empty'
             }
@@ -112,7 +112,7 @@ describe('concat.test.js', function () {
                     't4fgw3uygvqtuwy3fv',
                     '9wfuygw2euyfgweyf'
                 ],
-                uncheck: [],
+                unchecked: [],
                 viewDataCheckedAll: true,
                 type: 'empty'
             }
@@ -133,7 +133,7 @@ describe('concat.test.js', function () {
                     '9wfuygw2euyfgweyf',
                     'l23fgi823hf'
                 ],
-                uncheck: [],
+                unchecked: [],
                 viewDataCheckedAll: true,
                 type: 'empty'
             }

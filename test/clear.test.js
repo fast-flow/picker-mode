@@ -26,14 +26,14 @@ describe('clear', function () {
             ],
             // NOTE: getViewData 需要返回当前页面中显示数据的 id
             getViewData: commonTestGetViewData,
-            onChange: function (stat) {
-                data = stat
+            onChange: function (stats) {
+                data = stats
             }
         })
         expect(data).toEqual({
             mode: 'check',
             checked: [],
-            uncheck: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
+            unchecked: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
             viewDataCheckedAll: false,
             type: 'empty'
         })
@@ -41,7 +41,7 @@ describe('clear', function () {
         expect(data).toEqual({
             mode: 'uncheck',
             checked: ['f23iuh23bff2','3tufh23ifghuw', 'g24hg823hg232', 'g32igh2iughh3'],
-            uncheck: [],
+            unchecked: [],
             viewDataCheckedAll: true,
             type: 'empty'
         })
@@ -49,7 +49,7 @@ describe('clear', function () {
         expect(data).toEqual({
             mode: 'check',
             checked: [],
-            uncheck: [],
+            unchecked: [],
             viewDataCheckedAll: false,
             type: 'empty'
         })
