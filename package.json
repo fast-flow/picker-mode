@@ -1,7 +1,7 @@
 {
   "name": "picker-mode",
   "main": "lib/index.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "picker mode,encapsulate business logic code.",
   "repository": "fast-flow/picker-mode",
   "homepage": "http://fast-flow.github.io/picker-mode",
