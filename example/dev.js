@@ -18,3 +18,13 @@ var render = ReactDOM.render
         render(<Demo />, node)
     })
 })(document.getElementById('example__checkAll_node'))
+
+
+// all mode
+;(function (node) {
+    if (!node) {return}
+    require(['./allmode.demo.js'], function (Demo) {
+        Demo = Demo.default || Demo
+        render(<Demo />, node)
+    })
+})(document.getElementById('example__allmode_node'))
